@@ -1,0 +1,16 @@
+---
+interface Props {
+    footer?: string;
+}
+
+const { footer = "le créateur de ce site"} = Astro.props;
+---
+
+<footer>
+    <div>
+        <p>
+            {footer}
+       </p>
+       <slot />
+    </div>
+</footer>    
