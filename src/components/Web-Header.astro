@@ -1,0 +1,12 @@
+---
+interface Props {
+    header?: string;
+}
+const {
+        header = "Histoire",
+        } = Astro.props;
+---
+
+<header>
+    <h1>{header}</h1>   
+</header>

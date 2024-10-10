@@ -1,0 +1,31 @@
+---
+import Retour from "../components/Retour.astro";
+interface Props {
+    footer?: string;
+}
+
+const { footer = "le créateur de ce site",} = Astro.props;
+---
+
+<footer>
+    
+
+<div class="footer-retour">
+    <p>
+        <Retour />
+    </p>
+</div>
+
+
+
+
+    <div>
+        <p>
+            {footer}
+       </p>
+       <slot />
+    </div>
+
+
+
+</footer>    
